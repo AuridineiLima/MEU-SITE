@@ -1,5 +1,7 @@
 🌐 Portfólio de Desenvolvedor Web – Aury
 
+Ps: Site ainda em desenvolvimento
+
 Este é o meu site portfólio, criado para apresentar meus projetos, habilidades e trajetória como desenvolvedor front-end.
 
 🚀 Tecnologias utilizadas
