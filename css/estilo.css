@@ -1,0 +1,133 @@
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  transition: background 0.3s, color 0.3s;
+  background: #f4f4f4;
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+.dark-mode {
+  background: #121212;
+  color: #eee;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: #222;
+  color: #fff;
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin-left: 2rem;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #f39c12;
+}
+
+#darkModeToggle {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.section {
+  padding: 6rem 2rem 4rem 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.home-content {
+  text-align: justify;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.portfolio-card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.portfolio-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.portfolio-card a {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #f39c12;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+form input, form textarea {
+  display: block;
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  padding: 0.8rem 2rem;
+  border: none;
+  background: #222;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+form button:hover {
+  background: #f39c12;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 0;
+  background: #222;
+  color: #fff;
+  margin-top: 2rem;
+}
+
+.translate-widget {
+  position: fixed;
+  top: 80px;
+  right: 20px;
+  z-index: 1001;
+}
