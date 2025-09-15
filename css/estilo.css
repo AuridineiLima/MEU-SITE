@@ -131,3 +131,67 @@ footer {
   right: 20px;
   z-index: 1001;
 }
+
+/*tabela*/
+/* Estilo base da tabela */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 10px;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+
+/* Cabeçalho */
+.table thead {
+  background: linear-gradient(90deg, #222, #444);
+  color: #fff;
+}
+
+.table th, 
+.table td {
+  padding: 14px 16px;
+  text-align: left;
+  border-bottom: 1px solid #e6e6ef;
+}
+
+/* Hover nas linhas */
+.table tbody tr:hover {
+  background: rgba(243, 156, 18, 0.08);
+}
+
+/* Layout responsivo para telas pequenas */
+@media (max-width: 720px) {
+  .table thead {
+    display: none;
+  }
+
+  .table, 
+  .table tbody, 
+  .table tr, 
+  .table td {
+    display: block;
+    width: 100%;
+  }
+
+  .table tr {
+    margin-bottom: 12px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    padding: 10px;
+  }
+
+  .table td {
+    border-bottom: none;
+    padding: 8px 0;
+  }
+
+  .table td:before {
+    content: attr(data-label);
+    display: block;
+    font-weight: bold;
+    color: #666;
+    margin-bottom: 6px;
+  }
+}
